@@ -58,39 +58,36 @@ function App() {
     const newFlippedCards = [...flippedCards, card.id];
     setFlippedCards(newFlippedCards);
 
-    if(newFlippedCards.length === 2){
-      const firstCard = cards[flippedCards[0]];
-      if(firstCard.value === card.value){
-        //matched
-        setTimeout(()=>{
-          
-
-        setCards((prev)=> prev.map((c) => {
-            if (c.id === card.id || c.id === firstCard.id) {
-              return { ...c, isMatched: true };
+    if (newFlippedCards.length === 2) {
+      const firstCard = newCards.find((c) => c.id === newFlippedCards[0]);
+      if (firstCard && firstCard.value === card.value) {
+        // matched
+        setTimeout(() => {
+          setCards((prev) =>
+            prev.map((c) => {
+              if (c.id === card.id || c.id === firstCard.id) {
+                return { ...c, isMatched: true };
+              } else {
+                return c;
+              }
+            })
+          );
+          setFlippedCards([]);
+        }, 300);
+      } else {
+        // flip back both cards
+        setTimeout(() => {
+          const flippedBackCards = newCards.map((c) => {
+            if (newFlippedCards.includes(c.id)) {
+              return { ...c, isFlipped: false };
             } else {
               return c;
             }
-          })
-      );
-        setFlippedCards([]);
+          });
+          setCards(flippedBackCards);
 
-        },300);
-      }else{
-        //fliped the baack both cards
-        setTimeout(()=>{
-          const flippedBackCards = newCards.map((c)=>{
-          if(newFlippedCards.includes(c.id) || c.id){
-            return {...c, isFlipped: false};
-          }else{
-            return c;
-          }
-        });
-        setCards(flippedBackCards);
-
-        setFlippedCards([]);
-
-        },1000);
+          setFlippedCards([]);
+        }, 1000);
       }
     }
   };
