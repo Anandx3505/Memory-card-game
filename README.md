@@ -1,4 +1,4 @@
-# Memory Card 🧠✨ — [Play Here](https://your-site.netlify.app)
+# Memory Card 🧠✨ — [Play Here](https://mindxflip.netlify.app/)
 
 **Memory Card** is a small React app built with Vite that implements a classic card-matching memory game.
 
