@@ -4,6 +4,20 @@
   box-sizing: border-box;
 }
 
+/* Default page zoom: 80% */
+html {
+  zoom: 80%;
+}
+
+/* Firefox fallback: use transform because Firefox doesn't support zoom */
+@-moz-document url-prefix() {
+  html {
+    transform: scale(0.8);
+    transform-origin: 0 0;
+    width: 125%;
+  }
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, sans-serif;

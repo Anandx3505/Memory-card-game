@@ -1,16 +1,101 @@
-# React + Vite
+# Memory Card 🧠✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Memory Card** is a small React app built with Vite that implements a classic card-matching memory game.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✅ Features
 
-## React Compiler
+- Simple click-to-flip card matching gameplay
+- Tracks moves and game status
+- Responsive layout and lightweight codebase
+- Built with **React** and **Vite**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Framework:** React
+- **Bundler:** Vite
+- **Styling:** CSS
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v16+ recommended)
+- npm or yarn
+
+### Install
+
+```bash
+npm install
+# or
+# yarn
+```
+
+### Run (development)
+
+```bash
+npm run dev
+# or
+# yarn dev
+```
+
+Open `http://localhost:5173` in your browser.
+
+### Build
+
+```bash
+npm run build
+# or
+# yarn build
+```
+
+### Preview production build
+
+```bash
+npm run preview
+# or
+# yarn preview
+```
+
+---
+
+## � Live Demo
+
+Live demo: https://your-site.netlify.app
+
+> Deployed on Netlify — replace the URL above with your site's address or add a Netlify badge once your site is live.
+
+---
+
+## �📁 Project Structure
+
+Key files in this repository:
+
+- `index.html` — App entry
+- `src/main.jsx` — App bootstrap
+- `src/App.jsx` — Main app component
+- `src/components/Card.jsx` — Card component
+- `src/components/GameHeader.jsx` — Header / controls
+- `src/components/WinCard.jsx` — Win / end screen
+- `vite.config.js`, `package.json`, `.eslintrc` — config files
+
+---
+
+## ♻️ Contributing
+
+Contributions, issues and feature requests are welcome! Feel free to open a PR or an issue.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License — see the `LICENSE` file for details.
+
+---
+
+> Built for fun and learning — tweak the rules, add animations, or make it multiplayer! 💡
