@@ -4,23 +4,9 @@ import { Card } from "./components/Card";
 import { WinCard } from "./components/WinCard";
 
 const cardValues = [
-    "A",
-    "B",
-    "C",
-    "D",
-    "E",
-    "F",
-    "G",
-    "H",
-    "A",
-    "B",
-    "C",
-    "D",
-    "E",
-    "F",
-    "G",
-    "H"
-  ];
+  "🗿","💀","🤡","😂","🫡","🥲","😵‍💫","🫠",
+  "🗿","💀","🤡","😂","🫡","🥲","😵‍💫","🫠"
+];
 
 function App() {
   const [ cards, setCards ] = useState([]);
