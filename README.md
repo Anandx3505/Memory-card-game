@@ -68,7 +68,6 @@ npm run preview
 
 Live demo: https://mindxflip.netlify.app/
 
-> Deployed on Netlify — replace the URL above with your site's address or add a Netlify badge once your site is live.
 
 ---
 
